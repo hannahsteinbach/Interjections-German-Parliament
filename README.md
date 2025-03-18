@@ -7,7 +7,7 @@ Due to storage limitations, the `data/` directory and `new_speeches_output.csv` 
 
 The repository is designed to be flexible: you can replace the XML files in `data/` to analyze other debates from [GermaParl](https://github.com/PolMine/GermaParlTEI). To generate annotated dataframes for new debates, update the content in `data/` and run `preprocess.py`. This will save a new dataframe with meta-data (`new_speeches_output.csv`) for further analyses.
 
-⚠ **Run time warning:** Processing all debates from the 19th legislative period can be time-consuming. If you need the full `new_speeches_output.csv` without running it yourself, please contact the author.
+⚠ **Run time warning:** Processing a large number of debates can be time-consuming. If you are interested in the full `new_speeches_output.csv` for the 19th legislature period without running it yourself, please contact the author.
 
 ## 📝 Code Execution Order
 Some notebooks and scripts build upon each other. The recommended execution order is:
