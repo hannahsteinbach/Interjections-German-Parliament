@@ -29,7 +29,7 @@ Some notebooks and scripts build upon each other. The recommended execution orde
 7. **`evaluation.ipynb`**
    - Compares the performance of the Speech Act Classifier against manual annotations (thus only applicable to the last five debates of the 19th legislature period, for which parts were manually annotated).
 8. **Party Mentions Analysis (`party_mentions/`)**
-   - **`party_mentions_preprocessing.ipynb`**: Prepares data for analysis.
+   - **`party_mentions_preprocessing.ipynb`**: Prepares data for analysis, dependent on classifier_predictions.ipynb to create **`speeches.csv`**.
    - **`party_mentions.ipynb`**: Generates plots and prepares further analyses.
    - **`classified_partymentions.ipynb`**: Analyzes speech acts and interjections when parties mention themselves or others; (parts of) speeches and interjections from the last 5 debates of the 19th legislature period were manually annotated based on [Burkhardt, 1993](#references) and [Reinig et al., 2024](#references)).
 
