@@ -33,6 +33,8 @@ Some notebooks and scripts build upon each other. The recommended execution orde
    - **`party_mentions.ipynb`**: Generates plots and prepares further analyses.
    - **`classified_partymentions.ipynb`**: Analyzes speech acts and interjections when parties mention themselves or others; (parts of) speeches and interjections from the last 5 debates of the 19th legislature period were manually annotated based on [Burkhardt, 1993](#references) and [Reinig et al., 2024](#references)).
 
+Thus, files 1-4 can be ran with any debate, while 5-8 are restricted to the last 5 debates, since manual annotations are required. 
+
 ### 📧 Contact
 For questions or issues, contact the author: **hannahsteinbach0312@gmail.com**.
 
