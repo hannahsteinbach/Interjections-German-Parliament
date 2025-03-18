@@ -48,6 +48,6 @@ The corpus follows a CLARIN PUB+BY+NC+SA license. Code is released under the MIT
 
 ### Requirements
 To run the code, please install the necessary dependencies listed in the environment.yml file. You can set up the environment by running:
-'conda env create -f environment.yml'
+`conda env create -f environment.yml´.
 
 
