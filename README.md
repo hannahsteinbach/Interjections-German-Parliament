@@ -33,7 +33,7 @@ Some notebooks and scripts build upon each other. The recommended execution orde
    - **`party_mentions.ipynb`**: Generates plots and prepares further analyses.
    - **`classified_partymentions.ipynb`**: Analyzes speech acts and interjections when parties mention themselves or others; (parts of) speeches and interjections from the last 5 debates of the 19th legislature period were manually annotated based on [Burkhardt, 1993](#references) and [Reinig et al., 2024](#references)).
 
-Thus, files 1-4 can be ran with any debate, while 5-8 are restricted to the last 5 debates, since manual annotations are required. 
+Files 1-4 are flexible and can be run with any debate in the `data/` directory. However, files 5-8 require manual annotations and are therefore limited to the provided files. 
 
 ### 📧 Contact
 For questions or issues, contact the author: **hannahsteinbach0312@gmail.com**.
@@ -44,11 +44,10 @@ For questions or issues, contact the author: **hannahsteinbach0312@gmail.com**.
 - Ines Reinig, Ines Rehbein, and Simone Paolo Ponzetto. 2024. *How to do politics with words: Investigating speech acts in parliamentary debates.* In *Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)*, pp. 8287-8300, Torino, Italia. ELRA and ICCL.
 
 ###  License
-The data in this repository follows the **CLARIN PUB+BY+NC+SA** license, which means:
-- **PUB**: The language resource can be distributed publicly.
-- **BY (Attribution)**: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-- **NC (NonCommercial)**: You may not use the material for commercial purposes.
-- **SA (ShareAlike)**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+The corpus follows a CLARIN PUB+BY+NC+SA license. Code is released under the MIT License.
 
-The CLARIN licenses are modeled on the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/). For further details, please check CLARIN's documentation.
+### Requirements
+To run the code, please install the necessary dependencies listed in the environment.yml file. You can set up the environment by running:
+'conda env create -f environment.yml'
+
 
