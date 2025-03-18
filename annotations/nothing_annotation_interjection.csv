@@ -1,0 +1,59 @@
+utterance_token_list;Paragraph;predicted_labels;confidences;Speaker;Gender;Party;Interjector;Interjector Party;Interjector Gender;Filename
+['Alternative', 'für', 'Deutschland', '?'];Alternative für Deutschland? Schrecken für Deutschland!;[];[];Nicole Höchst;weiblich;AfD;Marianne Schieder;SPD;weiblich;BT_19_235.xml
+['Reden', 'Sie', 'zum', 'Thema', '!'];Reden Sie zum Thema! Was hat denn das mit dem Thema zu tun?;[];[];Nicole Höchst;weiblich;AfD;Dr. Karamba Diaby;SPD;männlich;BT_19_235.xml
+['Gott', 'sei', 'Dank', '!'];Gott sei Dank!;[];[];Kai Wegner;männlich;CDU/CSU;Marianne Schieder;SPD;weiblich;BT_19_235.xml
+['Was', 'ist', 'mit', 'den', 'Müttern', '?'];Was ist mit den Müttern?;[];[];Wolfgang Wiehle;männlich;AfD;Unknown;SPD;;BT_19_235.xml
+['Warum', 'dann', 'keine', 'Gegenüberstellung', '?'];Warum dann keine Gegenüberstellung?;[];[];Kirsten Lühmann;weiblich;SPD;Oliver Krischer;GRUENE;männlich;BT_19_235.xml
+['Ihre', 'Einschätzung', 'zum', 'Merkel-Nachfolger', 'war', 'gut!-', 'Jan', 'Korte', '[', 'DIE', 'LINKE', ']', ':'];Ihre Einschätzung zum Merkel-Nachfolger war gut!- Jan Korte [DIE LINKE]: Keiner klatscht!;[];[];Frauke Petry;weiblich;parteilos;Michael Grosse-Brömer;CDU/CSU;männlich;BT_19_236.xml
+['Schreien'];Schreien Sie doch nicht so!;[];[];Timon Gremmels;männlich;SPD;Stefan Müller;CDU/CSU;männlich;BT_19_236.xml
+['Was', 'ist', 'mit', 'dem', 'Kohleausstieg', '?'];Was ist mit dem Kohleausstieg?;[];[];Johann Saathoff;männlich;SPD;Dr. Christoph Hoffmann;FDP;männlich;BT_19_236.xml
+['Nennen', 'Sie', 'doch', 'mal', 'genaue', 'Zahlen', '!'];Nennen Sie doch mal genaue Zahlen! Was heißt das denn für Sie?;[];[];Thomas Sattelberger;männlich;FDP;Albert Rupprecht;CDU/CSU;männlich;BT_19_236.xml
+['Haben', 'die', 'Verträge', 'mit', 'dem', 'BMBF', 'oder', 'mit', 'der', 'Uni', '?'];Haben die Verträge mit dem BMBF oder mit der Uni?;[];[];Oliver Kaczmarek;männlich;SPD;Tankred Schipanski;CDU/CSU;männlich;BT_19_236.xml
+['Unbefristet', '!'];Unbefristet!;[];[];Wolfgang Stefinger;männlich;CDU/CSU;Matthias W. Birkwald;DIE LINKE;männlich;BT_19_236.xml
+['Der', 'Bundesdurchschnitt', 'liegt', 'bei', '90', 'Prozent', '!'];Der Bundesdurchschnitt liegt bei 90 Prozent!;[];[];Wolfgang Stefinger;männlich;CDU/CSU;Dr. Petra Sitte;DIE LINKE;weiblich;BT_19_236.xml
+['-Timon', 'Gremmels', '['];Lieber Himmel! -Timon Gremmels [SPD]: So ein Blödsinn!;[];[];Karsten Hilse;männlich;AfD;Marianne Schieder;SPD;weiblich;BT_19_236.xml
+['65', 'Prozent', 'haben', 'die', 'Grünen', 'gefordert', '!'];65 Prozent haben die Grünen gefordert!;[];[];Lisa Badum;weiblich;GRUENE;Dr. Anja Weisgerber;CDU/CSU;weiblich;BT_19_236.xml
+['Corona', '!'];Corona!;[];[];Anja Weisgerber;weiblich;CDU/CSU;Lisa Badum;GRUENE;weiblich;BT_19_236.xml
+['„', 'Heilung', '“', '?'];„Heilung“?;[];[];Gottfried Curio;männlich;AfD;Ulli Nissen;SPD;weiblich;BT_19_236.xml
+['Hätten', 'Sie', 'doch', 'zugehört', '!'];Das stimmt nicht! Hätten Sie doch zugehört! Erzählen Sie nicht einen solchen Quatsch!;[];[];Stephan Stracke;männlich;CDU/CSU;Steffi Lemke;GRUENE;weiblich;BT_19_236.xml
+['Lesen'];Lesen Sie doch den Bericht!;[];[];Volker Ullrich;männlich;CDU/CSU;Markus Frohnmaier;AfD;männlich;BT_19_236.xml
+['Lesen'];Lesen Sie den Bericht!;[];[];Volker Ullrich;männlich;CDU/CSU;Markus Frohnmaier;AfD;männlich;BT_19_236.xml
+['Ist', 'die', 'Zeit', 'noch', 'nicht', 'vorbei', '?'];Ist die Zeit noch nicht vorbei?;[];[];Stephan Brandner;männlich;AfD;Dr. Franziska Brantner;GRUENE;weiblich;BT_19_236.xml
+['Jawohl', '!'];Ihre Sprache kennen wir zur Genüge! Ihre Sprache kennen wir! Jawohl!;[];[];Stephan Brandner;männlich;AfD;Gabriele Katzmarek;SPD;weiblich;BT_19_236.xml
+['Für', 'alle', '?'];Für alle? Sie?;[];[];Stephan Brandner;männlich;AfD;Gabriele Katzmarek;SPD;weiblich;BT_19_236.xml
+['Die', 'AfD', 'applaudiert', '!'];Die AfD applaudiert!;[];[];Diether Dehm;männlich;DIE LINKE;Alexander Graf Lambsdorff;FDP;männlich;BT_19_236.xml
+['Sind', 'das', 'die', 'Nachwirkungen', 'vom', 'russischen', 'Impfstoff', ',', 'Diether', '?'];Sind das die Nachwirkungen vom russischen Impfstoff, Diether?;[];[];Diether Dehm;männlich;DIE LINKE;Dr. Franziska Brantner;GRUENE;weiblich;BT_19_236.xml
+['Der', 'war', 'bei', 'den', 'Grünen', '!'];Der war bei den Grünen!;[];[];Diether Dehm;männlich;DIE LINKE;Dr. Diether Dehm;DIE LINKE;männlich;BT_19_236.xml
+['Ich', 'schenke', 'Ihnen', 'zum', 'Abschied', 'einen', 'Spiegel', '!'];Ich schenke Ihnen zum Abschied einen Spiegel!;[];[];Thomas Seitz;männlich;AfD;Unknown;GRUENE;;BT_19_236.xml
+['Einschränkung', 'der', 'Meinungsfreiheit', '?'];Einschränkung der Meinungsfreiheit? Ich glaub’s ja nicht!;[];[];Thomas Seitz;männlich;AfD;Gabriele Katzmarek;SPD;weiblich;BT_19_236.xml
+['Um', 'diese', 'Zeit', '?'];Um diese Zeit? Die gehören ins Bett!;[];[];Heribert Hirte;männlich;CDU/CSU;Stephan Thomae;FDP;männlich;BT_19_236.xml
+['Und', 'wer', 'war', 'dagegen', '?'];Und wer war dagegen?;[];[];Nadine Schön;weiblich;CDU/CSU;Ralph Brinkhaus;CDU/CSU;männlich;BT_19_237.xml
+['Abgeschrieben', '!'];Abgeschrieben!;[];[];Anna Christmann;weiblich;GRUENE;Dr. h. c. Thomas Sattelberger;FDP;;BT_19_237.xml
+['„', 'Leider', '“', '?'];„Leider“?;[];[];Christian Frhr. von Stetten;männlich;CDU/CSU;Michael Schrodi;SPD;männlich;BT_19_237.xml
+['Gott', 'sei', 'Dank', '!'];Gott sei Dank!;[];[];Christian Frhr. von Stetten;männlich;CDU/CSU;Marianne Schieder;SPD;weiblich;BT_19_237.xml
+['Sie', 'doch', 'einfach', 'mal', 'zum', 'Thema', ',', 'Herr', 'Movassat', '!'];Reden Sie doch einfach mal zum Thema, Herr Movassat! Was hat denn die Mietpreisbremse damit zu tun? Sie haben wohl die falsche Rede erwischt!;[];[];Niema Movassat;männlich;DIE LINKE;Stephan Brandner;AfD;männlich;BT_19_237.xml
+['Und', 'tschüs', '!'];Und tschüs!;[];[];Niema Movassat;männlich;DIE LINKE;Stephan Brandner;AfD;männlich;BT_19_237.xml
+['Jawohl', '!'];Jawohl! Mehr Frauen als Männer am besten!;[];[];Elisabeth Motschmann;weiblich;CDU/CSU;Simone Barrientos;DIE LINKE;weiblich;BT_19_237.xml
+['Amtierende', 'SPD-Abgeordnete', '!'];Amtierende SPD-Abgeordnete!;[];[];Cansel Kiziltepe;weiblich;SPD;Matthias Hauer;CDU/CSU;männlich;BT_19_237.xml
+['Wo', 'ist', 'eigentlich', 'Peter', 'Altmaier', '?'];Wo ist eigentlich Peter Altmaier?;[];[];Matthias Hauer;männlich;CDU/CSU;Unknown;SPD;;BT_19_237.xml
+['Ist', 'Andi', 'Scheuer', 'eigentlich', 'noch', 'im', 'Amt', '?'];Ist Andi Scheuer eigentlich noch im Amt?;[];[];Matthias Hauer;männlich;CDU/CSU;Dr. Jens Zimmermann;SPD;männlich;BT_19_237.xml
+['„', 'Genosse', '“', '?'];„Genosse“? Überhaupt kein Genosse!;[];[];Katja Leikert;weiblich;CDU/CSU;Helin Evrim Sommer;DIE LINKE;weiblich;BT_19_237.xml
+['War', 'das', 'so', '?'];War das so?;[];[];Annalena Baerbock;weiblich;GRUENE;Carsten Schneider;SPD;männlich;BT_19_238.xml
+['Warum', 'haben', 'Sie', 'sich', 'dann', 'persönlich', 'enthalten', ',', 'Frau', 'Baerbock', '?'];Warum haben Sie sich dann persönlich enthalten, Frau Baerbock?;[];[];Annalena Baerbock;weiblich;GRUENE;Carsten Schneider;SPD;männlich;BT_19_238.xml
+['Warum', 'haben', 'Sie', 'dann', 'gegen', 'das', 'Löschmoratorium', 'gestimmt', '?'];Warum haben Sie dann gegen das Löschmoratorium gestimmt?;[];[];Jürgen Hardt;männlich;CDU/CSU;Britta Haßelmann;GRUENE;weiblich;BT_19_238.xml
+['Herr', 'Scholz', 'ist', 'schon', 'wieder', 'am', 'Handy', '!'];Er hört nicht zu! Herr Scholz ist schon wieder am Handy!;[];[];Christian Dürr;männlich;FDP;Otto Fricke;FDP;männlich;BT_19_238.xml
+['Wahlkampfrede', '!'];Wahlkampfrede!;[];[];Mechthild Heil;weiblich;CDU/CSU;Steffi Lemke;GRUENE;weiblich;BT_19_238.xml
+['Herr'];Herr Ramelow hat alles gut gemacht!;[];[];Jan Korte;männlich;DIE LINKE;Stephan Brandner;AfD;männlich;BT_19_238.xml
+['6', 'Prozent', '!'];6 Prozent!;[];[];Jan Korte;männlich;DIE LINKE;Gunther Krichbaum;CDU/CSU;männlich;BT_19_238.xml
+"['Ganz', 'weit', 'weg', ';']";"Ganz weit weg; das kann ich Ihnen sagen!";[];[];Stephan Brandner;männlich;AfD;Gabriele Katzmarek;SPD;weiblich;BT_19_238.xml
+['Und', 'tschüss', '!'];Und tschüss!;[];[];Stephan Brandner;männlich;AfD;Unknown;SPD;;BT_19_238.xml
+['Schöne', 'Grüße', 'an', 'Andi', 'Scheuer', '!'];Genau! Schöne Grüße an Andi Scheuer!;[];[];Michael Grosse-Brömer;männlich;CDU/CSU;Dr. Marco Buschmann;FDP;männlich;BT_19_239.xml
+['Auf', 'welcher', 'Strecke', '?'];Auf welcher Strecke?;[];[];Nils Schmid;männlich;SPD;Britta Haßelmann;GRUENE;weiblich;BT_19_239.xml
+['Wenn', 'die', 'Menschen', 'tot', 'sind', '?'];Wenn die Menschen tot sind?;[];[];Nils Schmid;männlich;SPD;Annalena Baerbock;GRUENE;weiblich;BT_19_239.xml
+['Mit', 'langem', '„', 'U', '“'];Mit langem „U“!;[];[];Christian Lindner;männlich;FDP;Jan Korte;DIE LINKE;männlich;BT_19_239.xml
+['Vergleichen'];Vergleichen Sie Deutschland mal mit anderen Ländern!;[];[];Dietmar Bartsch;männlich;DIE LINKE;Michael Grosse-Brömer;CDU/CSU;männlich;BT_19_239.xml
+['Herr'];Herr Korte bettelt um eine Koalition!;[];[];Jan Korte;männlich;DIE LINKE;Ralph Brinkhaus;CDU/CSU;männlich;BT_19_239.xml
+['Bis', '2060'];Bis 2060!;[];[];Alexander Dobrindt;männlich;CDU/CSU;Peter Boehringer;AfD;männlich;BT_19_239.xml
+['Warum', 'ist', 'er', 'dann', 'nicht', 'im', 'Kompetenzteam', '?'];Warum ist er dann nicht im Kompetenzteam?;[];[];Paul Ziemiak;männlich;CDU/CSU;Carsten Schneider;SPD;männlich;BT_19_239.xml
+['3'];3 G ist Lockdown!;[];[];Stephan Stracke;männlich;CDU/CSU;Beatrix von Storch;AfD;weiblich;BT_19_239.xml
+['Danke', ',', 'SPD', '!'];Danke, SPD!;[];[];Andreas Jung;männlich;CDU/CSU;René Röspel;SPD;männlich;BT_19_239.xml

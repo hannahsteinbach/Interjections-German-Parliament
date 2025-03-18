@@ -1,0 +1,48 @@
+utterance_token_list;Paragraph;predicted_labels;confidences;Speaker;Gender;Party;Interjector;Interjector Party;Interjector Gender;Filename;true_label;utterance
+['Gut', ',', 'dass', 'das', 'die', 'letzte', 'Rede', 'ist', '!'];Gut, dass das die letzte Rede ist!;['Macro'];[0.7225063443183899];Armin-Paulus Hampel;männlich;AfD;Britta Haßelmann;GRUENE;weiblich;BT_19_235.xml;['Evaluation'];true
+['Die', 'Zeit', 'ist', 'abgelaufen', '!'];Die Zeit ist abgelaufen!;['Macro'];[0.827701210975647];Albrecht Glaser;männlich;AfD;Britta Haßelmann;GRUENE;weiblich;BT_19_235.xml;;
+['Nach', 'Ihrer', 'Rede', 'muss'];Also was war jetzt der Fehler? Nach Ihrer Rede muss alles super gelaufen sein!;['Macro'];[0.8897091746330261];Nina Warken;weiblich;CDU/CSU;Stefan Gelbhaar;GRUENE;männlich;BT_19_235.xml;;
+['Jetzt', 'mal', 'zum', 'Thema', '!'];Jetzt mal zum Thema!;['Macro'];[0.9610102772712708];Michael Frieser;männlich;CDU/CSU;Stefan Gelbhaar;GRUENE;männlich;BT_19_235.xml;;
+['Reden'];Reden Sie über sich?;['Macro'];[0.6562814116477966];Michael Frieser;männlich;CDU/CSU;Oliver Krischer;GRUENE;männlich;BT_19_235.xml;;
+['Was', '?'];Was?;['Question-All'];[0.7603423595428467];Alice Weidel;weiblich;AfD;Claudia Roth;GRUENE;weiblich;BT_19_236.xml;['Question-All'];true
+['Alleine', '?'];Alleine?;['Question-All'];[0.5620326995849609];Johann Saathoff;männlich;SPD;Stefan Müller;CDU/CSU;männlich;BT_19_236.xml;['Question-All'];true
+['SPD', ']', ':'];Lieber Himmel! -Timon Gremmels [SPD]: So ein Blödsinn!;['Macro'];[0.6363376975059509];Karsten Hilse;männlich;AfD;Marianne Schieder;SPD;weiblich;BT_19_236.xml;xml fehler;xml fehler
+['Wie', 'teuer', 'wird', 'die', 'Solarpflicht', ',', 'und', 'wo', 'ist', 'die', 'im', 'Haushalt', 'eingeplant', '?'];Wie teuer würden die denn? Mach doch einmal ein Preisschild daran! Wie teuer wird die Solarpflicht, und wo ist die im Haushalt eingeplant? Seid doch mal ehrlich! Mein Gott!;['Question-All'];[0.675824761390686];Lisa Badum;weiblich;GRUENE;Dr. Lukas Köhler;FDP;männlich;BT_19_236.xml;['Question-All'];false
+['Was', '?'];Was?;['Question-All'];[0.7603422999382019];Helge Lindh;männlich;SPD;Andreas Bleck;AfD;männlich;BT_19_236.xml;['Question-All'];true
+['Was', '?'];Was?;['Question-All'];[0.7603423595428467];Philipp Amthor;männlich;CDU/CSU;Renate Künast;GRUENE;weiblich;BT_19_236.xml;['Question-All'];true
+['In', 'Myanmar', 'gibt', 'es', 'auch', 'Tote', '!'];In Myanmar gibt es auch Tote!;['Report'];[0.6148151159286499];Elisabeth Motschmann;weiblich;CDU/CSU;Heike Hänsel;DIE LINKE;weiblich;BT_19_236.xml;['Report'];true
+['Mann', ',', 'Christoph', ',', 'hör', 'doch', 'auf', ',', 'so', 'einen', 'Mist', 'zu', 'erzählen', '!'];Sagen wir auch nicht! Mann, Christoph, hör doch auf, so einen Mist zu erzählen! Du weißt ganz genau, dass das nicht stimmt! Meine Güte!;['Demand'];[0.6017540097236633];Christoph Ploß;männlich;CDU/CSU;Dr. Franziska Brantner;GRUENE;weiblich;BT_19_236.xml;;
+['Auf', 'Wiedersehen', '!'];Auf Wiedersehen! Tschüs!;['Expressive'];[0.6103555560112];Thomas Seitz;männlich;AfD;Leni Breymaier;SPD;weiblich;BT_19_236.xml;['Expressive'];true
+['Tschüs', '!'];Auf Wiedersehen! Tschüs!;['Expressive'];[0.6912685036659241];Thomas Seitz;männlich;AfD;Leni Breymaier;SPD;weiblich;BT_19_236.xml;['Expressive'];true
+['Reden'];Reden Sie doch lieber!;['Macro'];[0.6562814116477966];Tobias Matthias Peterka;männlich;AfD;Andreas Bleck;AfD;männlich;BT_19_236.xml;;
+['Rede', 'halten', '!'];Rede halten!;['Macro'];[0.9499813318252563];Tobias Matthias Peterka;männlich;AfD;Karsten Hilse;AfD;männlich;BT_19_236.xml;;
+['Reden'];Reden Sie doch mal über die Steuern, die die Migranten zahlen!;['Macro'];[0.6562814712524414];Gottfried Curio;männlich;AfD;Canan Bayram;GRUENE;weiblich;BT_19_236.xml;;
+['Was', '?'];Was?;['Question-All'];[0.7603422999382019];Ulla Ihnen;weiblich;FDP;Unknown;AfD;;BT_19_237.xml;['Question-All'];true
+['Danke', '!'];Tolle Rede! Danke!;['Expressive'];[0.8067848086357117];Ulla Ihnen;weiblich;FDP;Stephan Brandner;AfD;männlich;BT_19_237.xml;['Expressive'];true
+['Reden'];Reden Sie doch einfach mal zum Thema, Herr Movassat! Was hat denn die Mietpreisbremse damit zu tun? Sie haben wohl die falsche Rede erwischt!;['Macro'];[0.6562814116477966];Niema Movassat;männlich;DIE LINKE;Stephan Brandner;AfD;männlich;BT_19_237.xml;;
+['Zum', 'Thema', ',', 'Herr', 'Movassat', '!'];Zum Thema, Herr Movassat!;['Macro'];[0.9050849676132202];Niema Movassat;männlich;DIE LINKE;Stephan Brandner;AfD;männlich;BT_19_237.xml;;
+['Gegen', 'wen', '?'];Gegen wen?;['Question-All'];[0.9218144416809082];Ute Vogt;weiblich;SPD;Stephan Brandner;AfD;männlich;BT_19_237.xml;['Question-All'];true
+['Sie', 'hat', 'übers', 'Umsetzen', 'gesprochen', '!'];Sie hat übers Umsetzen gesprochen! Sie hören einfach nicht mehr zu!;['Report'];[0.9530578851699829];Norbert Barthle;männlich;CDU/CSU;Steffi Lemke;GRUENE;weiblich;BT_19_237.xml;;
+['-Zuruf', 'von', 'der', 'SPD', ':', 'Hört', '!'];Da hat Wolfgang Schäuble ganz schön gepennt die ganzen Jahre anscheinend! -Zuruf von der SPD: Hört! Hört!;['Macro'];[0.8036300539970398];Matthias Hauer;männlich;CDU/CSU;Unknown;SPD;;BT_19_237.xml;;
+['Was', '?'];Was?;['Question-All'];[0.7603422999382019];Jens Zimmermann;männlich;SPD;Cansel Kiziltepe;SPD;weiblich;BT_19_237.xml;['Question-All'];true
+['Das', 'war', 'eine', 'öffentliche', 'Anhörung', ',', 'die', 'ist', 'online', '.'];Das war eine öffentliche Anhörung, die ist online. Die kann man sich ansehen. Hätten Sie auch machen können!;['Report'];[0.8792260885238647];Michael Espendiller;männlich;AfD;Dr. Michael Espendiller;AfD;männlich;BT_19_237.xml;['Report'];true
+['Ich', 'war', 'da', '!'];Ich war da! Im Gegensatz zu Ihnen!;['Report'];[0.9280660152435303];Michael Espendiller;männlich;AfD;Benjamin Strasser;FDP;männlich;BT_19_237.xml;['Report'];true
+['Stimmen'];Stimmen Sie jetzt zu?;['Macro'];[0.6313682794570923];Dietmar Bartsch;männlich;DIE LINKE;Unknown;FDP;;BT_19_238.xml;;
+['Ich', 'kann', 'auch', 'noch', 'eine', 'Frage', 'stellen', '!'];Ich kann auch noch eine Frage stellen!;['Macro'];[0.9145691990852356];Jürgen Hardt;männlich;CDU/CSU;Britta Haßelmann;GRUENE;weiblich;BT_19_238.xml;;
+['Danke', '!'];Danke!;['Expressive'];[0.8067847490310669];Jürgen Hardt;männlich;CDU/CSU;Britta Haßelmann;GRUENE;weiblich;BT_19_238.xml;['Expressive'];true
+['Welche', 'Regierung', '?'];Welche Regierung?;['Question-All'];[0.6863312125205994];Jürgen Hardt;männlich;CDU/CSU;Dr. Marie-Agnes Strack-Zimmermann;FDP;weiblich;BT_19_238.xml;['Question-All'];true
+['Was', '?'];Was?;['Question-All'];[0.7603423595428467];Peter Boehringer;männlich;AfD;Unknown;SPD;;BT_19_238.xml;['Question-All'];true
+['Wo', 'ist', 'er', 'eigentlich', '?'];Wo ist er eigentlich?;['Question-All'];[0.5999206900596619];Christian Haase;männlich;CDU/CSU;Thomas Hitschler;SPD;männlich;BT_19_238.xml;['Question-All'];true
+['Zuhören', '!'];Zuhören!;['Macro'];[0.5260658860206604];Mechthild Heil;weiblich;CDU/CSU;Marianne Schieder;SPD;weiblich;BT_19_238.xml;;
+['Was', '?'];Was?;['Question-All'];[0.7603422999382019];Tino Chrupalla;männlich;AfD;Stephan Brandner;AfD;männlich;BT_19_238.xml;['Question-All'];true
+['Es', 'liegen', 'Anträge', 'vor', '!'];Nein! Wenn man sich nicht verhalten will! Es liegen Anträge vor!;['Report'];[0.6883311867713928];Michael Grosse-Brömer;männlich;CDU/CSU;Britta Haßelmann;GRUENE;weiblich;BT_19_239.xml;['Report'];true
+['Es', 'liegen', 'Anträge', 'vor', '!'];Es ist keine Beschlussfassung möglich! Es liegen Anträge vor!;['Report'];[0.6883311867713928];Michael Grosse-Brömer;männlich;CDU/CSU;Dr. Marco Buschmann;FDP;männlich;BT_19_239.xml;['Report'];true
+['Zum', 'Thema', '!'];Zum Thema!;['Macro'];[0.8442091941833496];Nils Schmid;männlich;SPD;Christine Aschenberg-Dugnus;FDP;weiblich;BT_19_239.xml;;
+['Reden'];Reden Sie doch mal zur Sache! Warum sind Sie gegen das Löschmoratorium?;['Macro'];[0.6562814712524414];Nils Schmid;männlich;SPD;Britta Haßelmann;GRUENE;weiblich;BT_19_239.xml;;
+['zur', 'Sache'];Reden Sie doch mal zur Sache! Warum sind Sie gegen das Löschmoratorium?;['Macro'];[0.9065601825714111];Nils Schmid;männlich;SPD;Britta Haßelmann;GRUENE;weiblich;BT_19_239.xml;;
+['Was', '?'];Was?;['Question-All'];[0.7603423595428467];Christian Lindner;männlich;FDP;Jan Korte;DIE LINKE;männlich;BT_19_239.xml;['Question-All'];true
+['Wir', 'haben', 'beim', 'letzten', 'Mal', '90', 'Minuten', 'debattiert', '!'];Wir haben beim letzten Mal 90 Minuten debattiert!;['Report'];[0.813826858997345];Annalena Baerbock;weiblich;GRUENE;Michael Grosse-Brömer;CDU/CSU;männlich;BT_19_239.xml;;
+['Frage', '!'];Frage!;['Macro'];[0.7940604090690613];Annalena Baerbock;weiblich;GRUENE;Unknown;CDU/CSU;;BT_19_239.xml;;
+['Frage', '!'];Frage!;['Macro'];[0.7940604090690613];Annalena Baerbock;weiblich;GRUENE;Unknown;AfD;;BT_19_239.xml;;
+['So', ',', 'Herr', 'Laschet', ',', 'jetzt', 'aber', '!'];So, Herr Laschet, jetzt aber!;['Macro'];[0.8822554349899292];Annalena Baerbock;weiblich;GRUENE;Dr. Alice Weidel;AfD;weiblich;BT_19_239.xml;;
+['Aber', 'wir', 'würden', 'ihm', 'noch', 'Redezeit', 'geben', '!'];Aber wir würden ihm noch Redezeit geben!;['Macro'];[0.9590740203857422];Alexander Dobrindt;männlich;CDU/CSU;Christian Dürr;FDP;männlich;BT_19_239.xml;;
