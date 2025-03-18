@@ -22,15 +22,16 @@ Some notebooks and scripts build upon each other. The recommended execution orde
    - Analyzes interjections (e.g., average token length, bag-of-words).
 5. **`speechact_classifier.ipynb`**
    - Prepares data for speech act classification using the BERT model from [Reinig et al., 2024](https://github.com/umanlp/speechact/tree/main).
-   - Predictions for the last five debates are stored in `predictions/`.
+   - Predictions for the last five debates of the 19th legislature period are stored in `predictions/`.
+   - Note: This is only the code for preprocessing the files to obtain predictions from the BERT model, not the code for for running the model.
 6. **`classifier_predictions.ipynb`**
-   - Uses manually annotated data from `annotations/` (only applicable to the last five debates).
+   - Uses manually annotated data from `annotations/` (only applicable to the last five debates of the 19th legislature period).
 7. **`evaluation.ipynb`**
    - Compares the performance of the Speech Act Classifier against manual annotations.
 8. **Party Mentions Analysis (`party_mentions/`)**
    - **`party_mentions_preprocessing.ipynb`**: Prepares data for analysis.
    - **`party_mentions.ipynb`**: Generates plots and prepares further analyses.
-   - **`classified_partymentions.ipynb`**: Analyzes speech acts and interjections when parties mention themselves or others (annotations based on [Burkhardt, 1993](#references) and [Reinig et al., 2024](#references)).
+   - **`classified_partymentions.ipynb`**: Analyzes speech acts and interjections when parties mention themselves or others; (parts of) speeches and interjections from the last 5 debates of the 19th legislature period were manually annotated based on [Burkhardt, 1993](#references) and [Reinig et al., 2024](#references)).
 
 ## 📧 Contact
 For questions or issues, contact the author: **hannahsteinbach0312@gmail.com**.
