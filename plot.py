@@ -21,6 +21,11 @@ df = pd.read_csv(file_path)
 df['Party'] = df['Party'].replace({'CDU': 'CDU/CSU', 'CSU': 'CDU/CSU', 'Univ Kyiv': 'CDU/CSU', 'UnivKyiv':'CDU/CSU', 'Erlangen':'CDU/CSU', 'BÜNDNIS 90/D': 'GRUENE', 'BÜNDNISSES 90/DIE GRÜNEN': 'GRUENE','BÜNDNIS 90/DIE GRÜNEN': 'GRUENE', 'BÜNDIS 90/DIE GRÜNEN': 'GRUENE', 'LINKEN': 'DIE LINKE', 'LINKE': 'DIE LINKE'})
 df['Interjector Party'] = df['Interjector Party'].replace({'CDU': 'CDU/CSU', 'CSU': 'CDU/CSU', 'Univ Kyiv': 'CDU/CSU', 'UnivKyiv':'CDU/CSU', 'Erlangen':'CDU/CSU', 'BÜNDNIS 90/D': 'GRUENE', 'BÜNDNISSES 90/DIE GRÜNEN': 'GRUENE','BÜNDNIS 90/DIE GRÜNEN': 'GRUENE', 'BÜNDIS 90/DIE GRÜNEN': 'GRUENE', 'LINKEN': 'DIE LINKE', 'LINKE': 'DIE LINKE'})
 
+last_5_dates = df['Date'].dropna().unique()
+last_5_dates.sort()
+last_5_dates = last_5_dates[-5:]
+
+df = df[df['Date'].isin(last_5_dates)]
 interjections_df = df[df['Interjection'] == True]
 
 nonverbal_interjections_df = df[df['Nonverbal interjection'] == True]
