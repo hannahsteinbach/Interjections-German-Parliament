@@ -7,6 +7,29 @@ Due to storage limitations, the `data/` directory and `new_speeches_output.csv` 
 
 The repository is designed to be flexible: you can replace the XML files in `data/` to analyze other debates from [GermaParl](https://github.com/PolMine/GermaParlTEI). To generate annotated dataframes for new debates, update the content in `data/` and run `preprocess.py`. This will save a new dataframe with meta-data (`new_speeches_output.csv`) for further analyses.
 
+Annotation details: 
+| **Column**                 | **Type**     | **Description** |
+|----------------------------|-------------|----------------|
+| `Filename`                 | String      | Name of debate file |
+| `Period`                   | String      | Legislature Period |
+| `Date`                     | String      | Date in datetime format |
+| `Item`                     | String      | Name of agenda item of paragraph (e.g., *Antrag der Abgeordneten...*) |
+| `Speech #`                 | Integer     | Number of speech overall |
+| `Paragraph #`              | Integer     | Number of paragraph within speech |
+| `Speaker`                  | String      | Name of the speaker |
+| `Role`                     | String      | Role of the speaker (e.g., MP, government) |
+| `Gender`                   | String      | Gender of the speaker (as noted in Bundestag Stammdaten) |
+| `Party`                    | String      | Party of the speaker |
+| `Paragraph`                | String      | Content of the paragraph |
+| `Interjection`             | Boolean     | `True` if the paragraph is an interjection |
+| `Interjector`              | String      | Name of the interjecting person |
+| `Interjector Gender`       | String      | Gender of the interjecting person |
+| `Interjector Party`        | String      | Party of the interjecting person |
+| `Verbal interjection`      | Boolean     | `True` if the interjection is verbal (e.g., *Zuruf, Widerspruch*) |
+| `Nonverbal interjection`   | Boolean     | `True` if the interjection is nonverbal (e.g., *Beifall, Lachen*) |
+| `Interjection type`        | String      | More specific interjection type (e.g., *Zuruf, Beifall, Lachen*) |
+
+
 ⚠ **Run time warning:** Processing a large number of debates can be time-consuming. If you are interested in the full `new_speeches_output.csv` for the 19th legislature period without running it yourself, please contact the author.
 
 ### 📝 Code Execution Order
