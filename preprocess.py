@@ -9,42 +9,58 @@ stammdaten = "MdB-Stammdaten/MDB_STAMMDATEN.XML"
 sd_tree = ET.parse(stammdaten)
 sd_root = sd_tree.getroot()
 
+def get_gender_from_name(full_name, root):
+    '''Function to retrieve the gender of an MP from the official MDB Stammdaten'''
 
-def get_gender_from_name(first_name, last_name, root):
-    '''Function to receive the gender of an MP from the official MDB Stammdaten'''
     def normalize_name(name):
-        # Remove "Dr." from the name if it exists
-        if "Dr." in name:
-            name = name.replace("Dr.", "").strip()
-        return name
+        titles_to_remove = ["Dr.", "Dr. h. c.", "Prof.", "h. c."]
+        for title in titles_to_remove:
+            name = name.replace(title, "")
+        return name.strip()
+
+    # Normalize the full name
+    normalized_full_name = normalize_name(full_name)
+
+    # Split the full name into first name and last name (assuming the last part is the last name)
+    names = normalized_full_name.split()
+    first_name = " ".join(names[:-1]) if len(names) > 1 else ""
+    primary_first_name = names[0] if names else ""
+    secondary_first_name = names[1] if len(names) > 1 else ""
+    last_name = names[-1] if names else ""
 
     for mdb in root.findall('./MDB'):
-        names = mdb.findall('.//NAMEN/NAME')
-        for name in names:
-            nachname = name.find('.//NACHNAME').text
-            adel = name.find('.//ADEL').text if name.find('.//ADEL') is not None else ''
-            praefix = name.find('.//PRAEFIX').text if name.find('.//PRAEFIX') is not None else ''
-            vorname = name.find('.//VORNAME').text
+        # Iterate through all names in the XML
+        for name in mdb.findall('.//NAMEN/NAME'):
+            vorname = name.find('.//VORNAME').text or ''
+            nachname = name.find('.//NACHNAME').text or ''
+            adel = name.find('.//ADEL').text or ''
+            praefix = name.find('.//PRAEFIX').text or ''
 
-            # Combine ADEL title with VORNAME if ADEL exists
+            # Include optional prefixes or titles
+            full_first_name = f"{vorname}".strip()
+            full_last_name = f"{praefix} {nachname}".strip()
+
+
+            # Add any "adel" titles (e.g., "von", "de")
             if adel:
-                vorname = f"{vorname} {adel}"
-            if praefix:
-                vorname = f"{vorname} {praefix}"
+                full_last_name = f"{adel} {nachname}".strip()
 
-            # Normalize first name by removing "Dr." if it exists
-            normalized_first_name = normalize_name(first_name)
+            # Match using full name first
+            if full_first_name == first_name and full_last_name == last_name:
+                return mdb.find('.//GESCHLECHT').text
 
-            # Compare normalized first_name with vorname and check last name
-            if vorname == normalized_first_name and nachname == last_name:
-                geschlecht = mdb.find('.//GESCHLECHT').text
-                return geschlecht
-            # Safety net: Check if only first name matches (ignoring titles)
-            elif vorname == normalized_first_name:
-                geschlecht = mdb.find('.//GESCHLECHT').text
-                return geschlecht
+            if full_first_name == first_name:
+                return mdb.find('.//GESCHLECHT').text
+
+            # Safety net: Match only by first name if full match fails
+            if primary_first_name == full_first_name:
+                return mdb.find('.//GESCHLECHT').text
+
+            if secondary_first_name == full_first_name:
+                return mdb.find('.//GESCHLECHT').text
 
     return None
+
 
 # Load the XML file
 data_directory = 'data'
@@ -104,6 +120,7 @@ for filename in os.listdir(data_directory):
     publication_stmt = root.find('.//teiHeader/fileDesc/publicationStmt')
     date_element = publication_stmt.find('date')
     date = date_element.text
+    print(date)
 
     title_smt = root.find('.//teiHeader/fileDesc/titleStmt')
     period_element = title_smt.find('legislativePeriod')
@@ -120,17 +137,8 @@ for filename in os.listdir(data_directory):
             if speaker_role == 'mp': #: get only speeches mp's (not government)
                 speech_id += 1
                 speaker_name = sp.get('name')
-                names = speaker_name.split()
-                last_name_sp = names[-1]
-                first_name_sp = " ".join(names[:-1])
+                gender_sp = get_gender_from_name(speaker_name, sd_root)
 
-                gender_sp = get_gender_from_name(first_name_sp, last_name_sp, sd_root)
-
-                if not gender_sp:
-                    last_name_sp = names[-1]
-                    first_name_sp = " ".join(names[:-1])
-                    gender_int = get_gender_from_name(first_name_sp, last_name_sp, sd_root)
-#
                 party = sp.get('party')
 
                 party_name = party if party else 'Unknown'
@@ -241,17 +249,18 @@ for filename in os.listdir(data_directory):
                                     if ',' in interjector:
                                         interjector = interjector.split(',')[0].strip()
                                     names = interjector.split()
+                                    names = " ".join(names)
                                     if names:
                                         last_name_int = names[-1]
                                         first_name_int = " ".join(names[:-1])
 
-                                        gender_int = get_gender_from_name(first_name_int, last_name_int, sd_root)
+                                        gender_int = get_gender_from_name(names, sd_root)
 
                                         # if none is found, try different combination (two last names, e.g. Amira Mohamed Ali)
                                         if not gender_int:
                                             first_name_int = names[0]
                                             last_name_int = " ".join(names[1:])
-                                            gender_int = get_gender_from_name(first_name_int, last_name_int, sd_root)
+                                            gender_int = get_gender_from_name(names, sd_root)
                                     else:
                                         gender_int = None
 
@@ -322,18 +331,19 @@ for filename in os.listdir(data_directory):
                                         if ',' in interjector:
                                             interjector = interjector.split(',')[0].strip()
                                         names = interjector.split()
+                                        names = " ".join(names)
 
                                         if names:
                                             last_name_int = names[-1]
                                             first_name_int = " ".join(names[:-1])
-                                            gender_int = get_gender_from_name(first_name_int, last_name_int, sd_root)
+                                            gender_int = get_gender_from_name(names, sd_root)
 
 
                                             # if none is found, try different combination (two last names, e.g. Amira Mohamed Ali)
                                             if not gender_int:
                                                 first_name_int = names[0]
                                                 last_name_int = " ".join(names[1:])
-                                                gender_int = get_gender_from_name(first_name_int, last_name_int, sd_root)
+                                                gender_int = get_gender_from_name(names, sd_root)
                                         else:
                                             gender_int = None
 
@@ -412,9 +422,10 @@ for filename in os.listdir(data_directory):
                                             if mps_found:
                                                 for interjector, interjector_party in mps_found:
                                                     names = interjector.split()
+                                                    names = " ".join(names)
                                                     last_name_int = names[-1]
                                                     first_name_int = " ".join(names[:-1])
-                                                    gender_int = get_gender_from_name(first_name_int, last_name_int,
+                                                    gender_int = get_gender_from_name(names,
                                                                                       sd_root)
                                                     if interjector_party == party:
                                                         interjection_type = match.group("speechact")
