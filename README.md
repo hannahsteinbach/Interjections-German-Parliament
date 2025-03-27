@@ -55,6 +55,7 @@ Some notebooks and scripts build upon each other. The recommended execution orde
    - **`party_mentions_preprocessing.ipynb`**: Prepares data for analysis, dependent on classifier_predictions.ipynb to create **`speeches.csv`**.
    - **`party_mentions.ipynb`**: Generates plots and prepares further analyses.
    - **`classified_partymentions.ipynb`**: Analyzes speech acts and interjections when parties mention themselves or others; (parts of) speeches and interjections from the last 5 debates of the 19th legislature period were manually annotated based on [Burkhardt, 1993](#references) and [Reinig et al., 2024](#references)).
+   - 
      Note: Unfortunately, the file  **`classified_partymentions.ipynb`** does not render properly in the preview. To view it, please download the file and open it in an IDE or Jupyter Notebook.
 
 Files 1-4 are flexible and can be run with any debate in the `data/` directory. However, files 5-8 require manual annotations and are therefore limited to the provided files. 
