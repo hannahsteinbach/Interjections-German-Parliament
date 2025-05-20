@@ -48,7 +48,6 @@ def build_mdb_index(root):
     return index, fallback_by_first, fallback_by_last
 
 index, fallback_by_first, fallback_by_last = build_mdb_index(sd_root)
-print(index)
 
 def get_gender_from_name(full_name, index, fallback_by_first, fallback_by_last, period):
     def normalize_name(name):
@@ -58,7 +57,6 @@ def get_gender_from_name(full_name, index, fallback_by_first, fallback_by_last, 
         return name.strip()
 
     normalized = normalize_name(full_name).lower()
-    print(normalized)
     names = normalized.split()
     first = names[0] if names else ""
     second = names[1] if len(names) > 1 else ""
@@ -152,7 +150,6 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
     publication_stmt = root.find('.//teiHeader/fileDesc/publicationStmt')
     date_element = publication_stmt.find('date')
     date = date_element.text
-    print(filename)
 
     title_smt = root.find('.//teiHeader/fileDesc/titleStmt')
     period_element = title_smt.find('legislativePeriod')
@@ -224,8 +221,6 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                         parts = re.split(split_pattern, interjection_text)
 
                         for part in parts:
-                            print(part)
-
                             ### ONLY VERBAL INTERJECTIONS ("Widerspruch", "Gegenruf", "Gegenrufe", "Zuruf", "Zustimmung") WITH COLON
                             if re.findall(pattern_colon, part):
                                 is_verbal_interjection = True
@@ -272,9 +267,6 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                                     names = " ".join(interjector.split())
                                                     meta_info = get_gender_from_name(names, index, fallback_by_first,
                                                                                      fallback_by_last, period)
-
-                                                    print("CHECK", names)
-                                                    print(meta_info)
 
                                                     if meta_info:
                                                         interjector = meta_info["name"]
@@ -352,9 +344,6 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                         meta_info = get_gender_from_name(names, index, fallback_by_first,
                                                                          fallback_by_last, period)
 
-                                        print("CHECK", names)
-                                        print(meta_info)
-
                                         if meta_info:
                                             interjector = meta_info["name"]
                                             gender_int = meta_info["gender"]
@@ -391,13 +380,9 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                 is_nonverbal_interjection = True
                                 speechact_matches = list(re.finditer(speechact_pattern_no_colon, part))
 
-                                print(f"Speechact_matches: {speechact_matches}")
-
                                 if speechact_matches:
                                     results = []
                                     for i, match in enumerate(speechact_matches):
-                                        print(speechact_matches)
-
                                         start = match.end()
 
                                         end = speechact_matches[i + 1].start() if i + 1 < len(
@@ -406,15 +391,12 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                         segment = part[start:end]
 
                                         split_sowie = r'\bsowie\b'
-                                        print(f"segment:", {segment})
                                         parts_sowie = re.split(split_sowie, segment)
-                                        print(f"Parts_sowie: {parts_sowie}")
                                         for part_sowie in parts_sowie:
                                             few_mps = "Abgeordneten" in part_sowie
                                             parties_found = re.findall(party_pattern, part_sowie)
                                             matches_mp = regex.findall(mp_party_pattern, part_sowie)
                                             mps_found = []
-                                            print("MATCHES MP", matches_mp)
 
                                             if matches_mp:
                                                 first_name, first_party, *rest = matches_mp[0]
@@ -433,15 +415,12 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                                  'FPD':'FDP'
 
                                             }
-                                            print(f"mpps found: {mps_found}")
-
                                             for party in parties_found:
                                                 few_mps = "Abgeordneten" in part_sowie  # check if ALL abgeordnete
                                                 for old, new in replacements.items():
                                                     party = re.sub(rf'\b{old}\b', new, party)
                                                 individual_added = False
                                                 if mps_found:
-                                                    print(f"mps: {mps_found}")
                                                     for interjector, interjector_party in mps_found:
                                                         names = interjector.split()
                                                         names = " ".join(names)
@@ -450,9 +429,6 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                                         meta_info = get_gender_from_name(names, index, fallback_by_first,
                                                                                          fallback_by_last, period)
                                                         gender_int = meta_info["gender"]
-                                                        print("CHECK", names)
-                                                        print(meta_info)
-
                                                         if interjector_party == party:
                                                             interjection_type = match.group("speechact")
 
@@ -485,7 +461,6 @@ for filename in tqdm(os.listdir(data_directory), desc="Processing files", unit="
                                                                 individual_added = True
 
                                                 if not individual_added:
-                                                    print("HELP")
                                                     interjection_types = re.split(r'\s+(?:und)\s+', match.group("speechact"))
                                                     for interjection_type in interjection_types:
                                                         is_verbal = interjection_type in ["Zuruf", "Zurufe", "Widerspruch",
@@ -566,8 +541,4 @@ speeches_df['Interjector Party'] = speeches_df['Interjector Party'].replace({'CD
                                                             'GRÜNE': 'GRUENE', 'GRÜNEN': 'GRUENE', 'LINKEN': 'DIE LINKE', 'LINKE': 'DIE LINKE',
                                                             'GB/ BHE': 'GB/BHE'})
 speeches_df.to_csv('test_output.csv', index=False )
-
-print(index.get("alexander lambsdorff"))
-print(index.get("alexander graf lambsdorff"))
-
 print("Data successfully saved to 'new_speeches_output.csv'")
