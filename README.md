@@ -1,6 +1,7 @@
 # 🗣️ Interjections and Interactions in the German Parliament: An Exploratory Study 
 
 This repository contains the code for the report analyzing parliamentary dynamics using Natural Language Processing (NLP).
+
 📄 Read the associated paper [here](./IM_Report_Steinbach.pdf)
 
 ## 📂 Repository Structure
