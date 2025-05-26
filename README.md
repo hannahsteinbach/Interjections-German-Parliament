@@ -1,6 +1,7 @@
 # 🗣️ Interjections and Interactions in the German Parliament: An Exploratory Study 
 
 This repository contains the code for the report analyzing parliamentary dynamics using Natural Language Processing (NLP).
+📄 Read the associated paper [here](./IM_Report_Steinbach.pdf)
 
 ## 📂 Repository Structure
 Due to storage limitations, the `data/` directory and `new_speeches_output.csv` contain only XML files and dataframes with meta-information for the last five debates. These XML files were sourced from [GermaParl](https://github.com/PolMine/GermaParlTEI) (Blätte, 2017).
